@@ -9,9 +9,8 @@ import matplotlib.ticker as mtick
 from sklearn.utils import shuffle
 import tensorflow as tf
 import tensorflow.keras.utils as utils
-from tensorflow.keras.utils import to_categorical
 #from keras.utils.np_utils import to_categorical
-
+'''
 #import energyflow as ef
 
 np.random.seed(0) #fix the seed to keep track of validation split
@@ -507,3 +506,4 @@ def DataLoader(data_path,labels,
         mask = np.expand_dims(cells[:nevts,:,-1],-1)
         print(cond[:nevts].shape) # (10, 2)
         return cells[:nevts,:,:-1]*mask,clusters[:nevts], cond[:nevts]
+'''
